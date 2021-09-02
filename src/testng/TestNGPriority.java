@@ -39,14 +39,5 @@ public class TestNGPriority {
        // driver.close();
     }		
 
-    // Method 4: Verify Google search page title.			
-    @Test (priority=4)		
-    public void FaceBookPageTitleVerification() throws Exception {	
-    	
-    	driver.get("http://www.google.co.in");	
-        driver.findElement(By.xpath(".//*[@value='Search']")).click();						
-        Thread.sleep(3000);		
-        Assert.assertEquals(driver.getTitle().contains("Facebook - Google Search"), true);	
-        driver.close();
-    }		
+   	
 }
